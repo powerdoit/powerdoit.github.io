@@ -6,8 +6,8 @@
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Archives: 2022 |  Hexo</title>
-  <title>Archives: 2022 |  Hexo</title>
+  <title>Tag: 出师表 |  Hexo</title>
+  <title>Tag: 出师表 |  Hexo</title>
   
     <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png">
@@ -21,6 +21,11 @@
   
   
     <link rel="shortcut icon" href="/favicon.ico">
+  
+  
+    
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.min.css">
+ 
   
   
 <link rel="stylesheet" href="/css/style.css">
@@ -80,12 +85,12 @@
   <!-- page-type-title -->
   
     
-<h1 class="page-type-title">2022</h1>
+<h1 class="page-type-title">#&nbsp出师表</h1>
   
   <!-- page-type-slogan -->
   <h5 class="slogan font-w-lighter text-gray">
     
-    汇聚热点话题 打造创新思路
+    实践见真知既是最好的解释
     
   </h5>
 </div>
@@ -98,7 +103,7 @@
 
 <section class="archives-wrap">
   <div class="archive-year-wrap">
-    <a href="/archives/2022" class="archive-year">2022</a>
+    <a href="/archives/2012" class="archive-year">2012</a>
   </div>
   <div class="archives">
     <div class="row flex-wrap">
@@ -107,22 +112,30 @@
   <article class="archive-article archive-type-post">
     <div class="card rounded">
       
+  
+    
+        <a class="card-img-link" href="/2012/12/21/chushibiao/" rel="gallery_cl156ityr0001ssw51a0bgk17">
+          <img class="card-img" src="/images/sample/mydesk.png" itemprop="image">
+        </a>
+       
+  
+
       <div class="card-body bg-light">
         
   
     <h5 class="article-title mb-0 line-clamp line-clamp-1" itemprop="name">
-      <a href="/2022/03/11/hello-world/">Hello World</a>
+      <a href="/2012/12/21/chushibiao/">出师表</a>
     </h5>
   
 
-        <time class="text-gray" datetime="2022-03-11T03:22:36.117Z" itemprop="datePublished">
-  2022-03-11
+        <time class="text-gray" datetime="2012-12-20T22:00:00.000Z" itemprop="datePublished">
+  2012-12-21
 </time>
-        <div class="card-text mt-3 line-clamp line-clamp-2"></div>
+        <div class="card-text mt-3 line-clamp line-clamp-2"><p>诸葛亮（181年—234年10月8日），字孔明，号卧龙，琅琊阳都（今山东省沂南县）人，三国时期蜀汉丞相，中国古代杰出的政治家、军事家、发明家、文学家。</p></div>
         <hr class="hr">
         
         <div class="article-more-link">
-          <a href="/2022/03/11/hello-world/#more">阅读全文</a>
+          <a href="/2012/12/21/chushibiao/#more">阅读全文</a>
         </div>
         
       </div>
@@ -149,11 +162,45 @@
           <p class="mb-4"></p>
           <ul class="list-inline">
             
+              <li class="list-inline-item">
+                <a target="_blank" rel="noopener" href="https://zhwangart.com">
+                  <img 0="微博" src="/images/icons/contact_weibo.svg">
+                </a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="javascript:;">
+                  <img 0="微信" src="/images/icons/contact_wechat.svg">
+                </a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="mailto:a@abc.com">
+                  <img 0="邮箱" src="/images/icons/contact_email.svg">
+                </a>
+              </li>
+            
           </ul>
         </div>
         <div class="col-4">
           <h5>友情链接</h5>
           <ul class="list-inline">
+            
+              <li class="list-inline-item">
+                <a href="https://acorn.imaging.xin/" title="Acorn" target="_blank" rel="noopener">Acorn</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://github.com/" title="GitHub" target="_blank" rel="noopener">GitHub</a>
+              </li>
+            
+              <li class="list-inline-item">
+                <a href="https://duoyu.wang/" title="To Base64" target="_blank" rel="noopener">To Base64</a>
+              </li>
             
           </ul>
         </div>
@@ -202,6 +249,7 @@
   </li>
   
 </ul>
+		
 	</div>
 </div>
 
@@ -209,7 +257,52 @@
 <script src="//cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 
 
+  
 <script src="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+
+
+
+  
+<script src="//cdn.jsdelivr.net/npm/keen-slider@latest/keen-slider.js"></script>
+
+  <script>
+    var slider = new KeenSlider(
+      "#my-keen-slider",
+      {
+        loop: true,
+      },
+      [
+        (slider) => {
+          let timeout
+          let mouseOver = false
+          function clearNextTimeout() {
+            clearTimeout(timeout)
+          }
+          function nextTimeout() {
+            clearTimeout(timeout)
+            if (mouseOver) return
+            timeout = setTimeout(() => {
+              slider.next()
+            }, 3000)
+          }
+          slider.on("created", () => {
+            slider.container.addEventListener("mouseover", () => {
+              mouseOver = true
+              clearNextTimeout()
+            })
+            slider.container.addEventListener("mouseout", () => {
+              mouseOver = false
+              nextTimeout()
+            })
+            nextTimeout()
+          })
+          slider.on("dragStarted", clearNextTimeout)
+          slider.on("animationEnded", nextTimeout)
+          slider.on("updated", nextTimeout)
+        },
+      ]
+    )
+  </script>
 
 
 <script src="/js/script.js"></script>
